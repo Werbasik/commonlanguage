@@ -550,7 +550,12 @@ section#about {
 }
 
 
-@media (max-width: 724px) {
+
+
+
+
+
+@media all and (max-width:724px) {
     #container section:first-of-type {
         padding-top: 15vh;
     }
