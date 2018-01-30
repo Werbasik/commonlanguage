@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Common Language</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
@@ -20,8 +21,8 @@
             <div class="close"></div>
             <a href="#konferencje">Konferencje</a>
             <a href="#zgłoszenia">Zgłoszenia</a>
-            
-            
+
+
             <a href="#omnie">O mnie</a>
             <a href="#kontakt">Kontakt</a>
         </nav>
@@ -607,27 +608,79 @@
 
                 </section>
 
-                <section id="konferencje">
-                    <div class="conference">
+                <section id="seminaria">
+                    <h1 class="gallery">Seminaria</h1>
+                    <div class="wrap">
 
-                        <div class="conf-overlay">
-                            <h1 class=conf1>Konferencje</h1>
-                            <p class="conf2">Rachaël Draaisma & Rachel Bedingfield na wykładach w Polsce!</p>
-                            <p class="conf2">Emocje i sygnały uspokajające u koni.</p>
-                            <p class="conf2">Warszawa, 2-3 czerwca 2018.</p>
+                        <div class="tile" onclick="location.href='conference.html'">
+                          <div class="header-vid-overlay"></div>
+                           <video poster="https://s3.eu-central-1.amazonaws.com/htmltests/poster.jpg" class="header-vid" playsinline autoplay muted loop>
+            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jelly.webm" type="video/webm"/>
+            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jelly.ogv" type="video/ogg" />
+            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jellycomp.mp4" type="video/mp4"/>
+        </video>
+                            <div class="text">
+                                <h1>Rachaël Draaisma & Rachel Bedingfield</h1>
+                                <h2 class="animate-text">Emocje i sygnały uspokajające u koni.</h2>
+                                <p class="animate-text">Warszawa, 2-3 czerwca 2018. </p>
+                                <div class="dots">
+                                  <i class="fa fa-heart-o" aria-hidden="true" fa-5x ></i>  
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
 
-                            <div class="row">
-                                <div class="column">Rachaël Draaisma & Rachel Bedingfield
-                                    <p class="rachael"> Pierwsze w Polsce seminarium dotyczące systemów emocjonalnych, języka ciała i sygnałów uspokajających u koni. Klucz do zrozumienia konia i budowania więzi ze zwierzęciem. To seminarium, które może w każdym jego uczestniku – jeźdźcu, trenerze, opiekunie konia czy lekarzu weterynarii – zapoczątkować wielką zmianę w podejściu do konia i relacji z nim.</p><button class="read" onclick="location.href='conference.html'" type="button">Czytaj więcej</button></div>
-                                <div class="column2">
 
+                        <div class="tile">
+                            <img src="img/kon.jpg" />
+                            <div class="text">
+                                <h1>Shawna Karrasch</h1>
+                                <h2 class="animate-text">Pozytywne metody szkolenia koni</h2>
+                                <p class="animate-text">Warszawa, 15-16 września 2018</p>
+                                <div class="dots">
+                                    <i class="fa fa-heart-o" aria-hidden="true" fa-5x onclick="location.href='shawna.html'"></i>  
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
 
-
+                        <div class="tile">
+                            <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80' />
+                            <div class="text">
+                                <h1>Lorem ipsum.</h1>
+                                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+                                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tile">
+                            <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80' />
+                            <div class="text">
+                                <h1>Lorem ipsum.</h1>
+                                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
+                                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
+                                <div class="dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
                 </section>
+
+        
                 <section id="zgłoszenia">
                     <div class="forms">
                         <h1 class="conf1">Formularz zgłoszeniowy</h1>
@@ -702,21 +755,21 @@
 
                 </section>
                 <section id="kontakt">
-                    <footer id="terms"> 
-                            <div class="row">
-                                    <h1>Kontakt</h1>
-                                <div class="icon">
-                                    <div class="icon-social"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></div>
-                                    <div class="icon-social"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></div>
-                                    <div class="icon-social"><i class="fa fa-phone-square fa-5x" aria-hidden="true"></i></div>
-                                </div>
-                                <div class="website">
-                                    <h4>created by www.conceptweb.com.pl</h4>
-                                    <h4>All rights reserved Common Language 2018</h4>
-                                </div>
+                    <footer id="terms">
+                        <div class="row">
+                            <h1>Kontakt</h1>
+                            <div class="icon">
+                                <div class="icon-social"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></div>
+                                <div class="icon-social"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></div>
+                                <div class="icon-social"><i class="fa fa-phone-square fa-5x" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="website">
+                                <h4>created by www.conceptweb.com.pl</h4>
+                                <h4>All rights reserved Common Language 2018</h4>
+                            </div>
 
 
-                        
+
                         </div>
                     </footer>
 
@@ -735,6 +788,7 @@
     <script src="js/toggle.js"></script>
     <script src="js/header.js"></script>
     <script src="js/svgAnim.js"></script>
+     <script src="js/videoHover.js"></script>
 
 
 </body>

@@ -262,6 +262,214 @@ svg path {
 }
 
 
+
+
+#seminaria .gallery {
+    font-size: 35px;
+    color: black;
+    letter-spacing: 1px;
+    padding-top: 30px;
+    
+}
+
+.wrap {
+    margin: 50px auto 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: space-around;
+    max-width: 1200px;
+}
+
+.tile {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #EC4620;
+    display: inline-block;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
+    overflow: hidden;
+    color: white;
+    font-family: 'Roboto';
+    border-radius: 5px;
+
+}
+
+.tile img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out;
+}
+
+.tile video{
+    height: 100%;
+    transform: translateX(-25%);
+   
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.4s ease-out;
+    
+}
+
+div.header-vid-overlay {
+  background: #0b223e;
+  /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#1c59a3, #123a63, #0b223e);
+  /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#1c59a3, #123a63, #0b223e);
+  /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#1c59a3, #123a63, #0b223e);
+  /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#1c59a3, #123a63, #0b223e);
+  /* Standard syntax */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  opacity: 0.6; }
+
+.tile .text {
+    /*   z-index:99; */
+    position: absolute;
+    padding: 30px;
+    height: calc(100% - 60px);
+    z-index: 3;
+}
+
+.tile h1 {
+
+    font-weight: 300;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.tile h2 {
+    font-weight: 100;
+    margin: 20px 0 0 0;
+    font-style: italic;
+    transform: translateX(200px);
+}
+
+.tile p {
+    font-weight: 300;
+    margin: 20px 0 0 0;
+    line-height: 25px;
+    /*   opacity:0; */
+    transform: translateX(-200px);
+    transition-delay: 0.2s;
+}
+
+.wrap .seminar {
+    background-color: #021430;
+    border-radius: 5%;
+    border: none;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+    font-family: "Slabo";
+    font-weight: 400;
+    margin-left: -200px;
+    float: left;
+    padding: 20px;
+   
+
+    
+}
+
+.animate-text {
+    opacity: 0;
+    transition: all 0.6s ease-in-out;
+}
+
+.tile:hover {
+    /*   background-color:#99aeff; */
+    box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.64);
+    transform: scale(1.05);
+}
+
+.tile:hover img {
+    opacity: 0.2;
+}
+
+.tile:hover video {
+    opacity: 0.2;
+}
+
+.tile:hover .animate-text {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dots {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    color: currentColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.dots span {
+    width: 5px;
+    height: 5px;
+    background-color: currentColor;
+    border-radius: 50%;
+    display: block;
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.5s ease;
+    transform: translateY(30px);
+
+}
+
+.tile:hover span {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.dots span:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.dots span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.dots span:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+
+@media (max-width: 1000px) {
+    .wrap {
+        flex-direction: column;
+        width: 400px;
+    }
+}
+
+
 .conference .conf-overlay .conf1 {
     font-size: 35px;
     margin: 0px;
@@ -509,7 +717,7 @@ section#about {
     color: white;
 }
 
-#kontakt{
+#kontakt {
     height: 420px !important;
 }
 
@@ -525,7 +733,7 @@ section#about {
     margin-top: 50px;
     width: 100%;
     text-align: center;
-    
+
 }
 
 #terms .row .icon .icon-social {
@@ -536,13 +744,13 @@ section#about {
 }
 
 #terms .row .icon .icon-social:hover {
-   cursor: pointer;
-    color: white;
+    cursor: pointer;
+    color: #EC4620;
 }
 
 #terms .row h4 {
- 
-    
+
+
     font-size: 15px;
     margin-top: 50px;
     letter-spacing: 1px;
@@ -555,7 +763,7 @@ section#about {
 
 
 
-@media all and (max-width:724px) {
+@media all and (max-device-width:724px) {
     #container section:first-of-type {
         padding-top: 15vh;
     }
@@ -565,45 +773,50 @@ section#about {
     #container section:first-of-type p {
         font-size: 18px;
     }
-    
-  #container section#konferencje{
+
+    #container section#konferencje {
         height: 1080px;
     }
     
-  
-    
-    
+    section#seminaria  {
+ height: 1400px;   
+}
+
+
+
+
     .column {
-        width:100%;
+        width: 100%;
         margin: 0 auto;
     }
-    
-    .column2{
-        width:100%;
+
+    .column2 {
+        width: 100%;
         max-width: none;
         background-size: cover;
         transform: none;
         height: 500px;
     }
-    
-    input[type=text], select{
+
+    input[type=text],
+    select {
         width: 70%;
         margin-left: 15%;
     }
-    
-    .languageswitch{
+
+    .languageswitch {
         font-size: 10px;
-         width: 80%;
+        width: 80%;
         margin-left: 10%;
     }
-    
-    .invoiceswitch{
+
+    .invoiceswitch {
         font-size: 10px;
-         width: 70%;
+        width: 70%;
         margin-left: 15%;
     }
-    
-    
+
+
 
 
 

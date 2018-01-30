@@ -1,5 +1,5 @@
 body {
-    border: 20px solid #BFE27D;
+    border: 20px solid #D9DBE9;
     padding: 20px;
     max-width: 700px;
     width: 80%;
@@ -21,11 +21,11 @@ body {
 } */
 .post {
     margin-bottom: 30px;
-     color: #14107F;
+     color: #022B84 ;
 }
 
 h1 {
-    color: #14107F;
+    color: #022B84 ;
     font-size: 50px;
     text-align: center;
 }
@@ -36,7 +36,7 @@ h2 {
     text-transform: uppercase;
     margin-top:20px;
     margin-bottom: 20px;
-     color: #14107F;
+     color: #022B84 ;
 }
 
 img {
@@ -52,7 +52,7 @@ h3 {
  
 p {
     font-size: 18px;
-    color:#14107F  ;
+    color: #022B84 ;
     
     
 }
@@ -62,5 +62,5 @@ p {
 }
 
 hr.style2 {
-	border-top: 3px double #14107F;
+	border-top: 3px double #022B84;
 }
