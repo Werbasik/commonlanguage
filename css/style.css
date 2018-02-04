@@ -207,7 +207,7 @@ svg path {
 
 #paper-window::-webkit-scrollbar {
     width: 10px;
-    background-color: black;
+    background-color: #256E01;
 }
 
 #paper-window::-webkit-scrollbar-thumb {
@@ -792,7 +792,7 @@ section#zgloszenia{
 
 
 .invoiceswitch {
-    text-align: left;
+    text-align: center;
     margin-left: 25%;
     height: 34px;
     margin-bottom: 10px;
@@ -802,19 +802,22 @@ section#zgloszenia{
 
 .languageswitch {
     width: 50%;
-    text-align: left;
+    text-align: center;
     margin-left: 25%;
-    height: 30px;
+    height: 80px;
     margin-bottom: 25px;
     font-size: 20px;
 }
 
 span.invoice {
-
     font-size: 20px;
     vertical-align: middle;
     display: inline-block;
     height: 100%;
+}
+
+textarea#invoiceField{
+    margin-top: 10px;
 }
 
 
@@ -988,7 +991,6 @@ section#about {
     margin: 14px;
     letter-spacing: 1px;
     text-align: center;
-
 }
 
 #terms .row .icon {
@@ -1002,7 +1004,6 @@ section#about {
     margin-right: 25px;
     margin-left: 25px;
     display: inline-block;
-    
 }
 
 #terms .row .icon .icon-social a{
@@ -1061,9 +1062,15 @@ section#about {
     section#seminaria {
         height: 1400px;
     }
+    
+    
+    section#seminaria .tile{
+        width: 100%;
+        border-radius: 0px;
+    }
 
     section#omnie {
-        height: 700px;
+        height: 750px;
     }
 
 
@@ -1073,7 +1080,7 @@ section#about {
 
     section#omnie .eva2 {
         width: 100%;
-        height: 300px;
+        height: 200px;
         background-position: center;
         background-size: contain;
         max-width: none;
@@ -1106,15 +1113,26 @@ section#about {
 
     .languageswitch {
         font-size: 10px;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
+        max-width: 100%;
+        height:auto;
+        margin-bottom: auto;
+        text-align: center;
+        margin-left: auto;
+        
     }
 
     .invoiceswitch {
         font-size: 10px;
-        width: 70%;
-        margin-left: 15%;
+        width: 100%;
+       margin: 0;
+        margin-top:30px;
+        text-align: center;
     }
+    
+    .fa-5x {
+    font-size: 3em !important;
+}
 
 
 
