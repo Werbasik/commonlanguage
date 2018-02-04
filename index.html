@@ -7,8 +7,10 @@
     <title>Common Language</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-chained/2.0.0-beta.2/jquery.chained.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.3/dist/vivus.min.js"></script>
 
 
@@ -19,8 +21,8 @@
     <div id="paper-back">
         <nav>
             <div class="close"></div>
-            <a href="#konferencje">Konferencje</a>
-            <a href="#zgłoszenia">Zgłoszenia</a>
+            <a href="#seminaria">Seminaria</a>
+            <a href="#zgloszenia">Zgłoszenia</a>
 
 
             <a href="#omnie">O mnie</a>
@@ -611,63 +613,49 @@
                 <section id="seminaria">
                     <h1 class="gallery">Seminaria</h1>
                     <div class="wrap">
-
-                        <div class="tile" onclick="location.href='conference.html'">
-                          <div class="header-vid-overlay"></div>
-                           <video poster="https://s3.eu-central-1.amazonaws.com/htmltests/poster.jpg" class="header-vid" playsinline autoplay muted loop>
-            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jelly.webm" type="video/webm"/>
-            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jelly.ogv" type="video/ogg" />
-            <source src="https://s3.eu-central-1.amazonaws.com/htmltests/jellycomp.mp4" type="video/mp4"/>
+                    
+                       <div class="tile" onclick="location.href='draaisma.html'">
+                            <img src="img/12_3.jpg" />
+                            <div class="text">
+                                <h1>Rachaël Draaisma</h1>
+                                <h2 class="animate-text">Sygnały uspokajające u koni.</h2>
+                                <p class="animate-text"> Kielce, 30-31 maja 2018</p>
+                                <div class="dots">
+                                    <i class="fa fa-heart-o" aria-hidden="true" fa-5x></i>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="tile" onclick="location.href='conference.html'">
+                            <div class="header-vid-overlay"></div>
+                            <video poster="video/kon.jpg" class="header-vid" playsinline autoplay muted loop>
+            <source src="video/kon.webm" type="video/webm"/>
+            <source src="video/kon.ogv" type="video/ogg" />
+            <source src="video/kon.mp4" type="video/mp4"/>
         </video>
                             <div class="text">
                                 <h1>Rachaël Draaisma & Rachel Bedingfield</h1>
                                 <h2 class="animate-text">Emocje i sygnały uspokajające u koni.</h2>
                                 <p class="animate-text">Warszawa, 2-3 czerwca 2018. </p>
                                 <div class="dots">
-                                  <i class="fa fa-heart-o" aria-hidden="true" fa-5x ></i>  
+                                    <i class="fa fa-heart-o" aria-hidden="true" fa-5x></i>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
                             </div>
                         </div>
-
-
-                        <div class="tile">
-                            <img src="img/kon.jpg" />
+                        
+                          <div class="tile" onclick="location.href='shawna.html'">
+                            <img src="img/shawna2.PNG" />
                             <div class="text">
                                 <h1>Shawna Karrasch</h1>
                                 <h2 class="animate-text">Pozytywne metody szkolenia koni</h2>
                                 <p class="animate-text">Warszawa, 15-16 września 2018</p>
                                 <div class="dots">
-                                    <i class="fa fa-heart-o" aria-hidden="true" fa-5x onclick="location.href='shawna.html'"></i>  
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tile">
-                            <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80' />
-                            <div class="text">
-                                <h1>Lorem ipsum.</h1>
-                                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                                <div class="dots">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile">
-                            <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80' />
-                            <div class="text">
-                                <h1>Lorem ipsum.</h1>
-                                <h2 class="animate-text">More lorem ipsum bacon ipsum.</h2>
-                                <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin turducken. </p>
-                                <div class="dots">
+                                    <i class="fa fa-heart-o" aria-hidden="true" fa-5x></i>
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -675,13 +663,11 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </section>
 
-        
-                <section id="zgłoszenia">
+
+
+                <section id="zgloszenia">
                     <div class="forms">
                         <h1 class="conf1">Formularz zgłoszeniowy</h1>
 
@@ -699,12 +685,33 @@
                             <input type="text" id="lname" name="lastname" placeholder="Telefon..">
 
                             <label for="seminar"></label>
-                            <select id="seminar" name="seminar" placeholder="Wybieram seminarium..">
+
+
+
+
+                            <select id="program" name="program" placeholder="Wybieram program...">
+                           <option value="Wybieram program..." selected disabled>Wybieram program...</option>
+                            <option value="warszawa">Emocje i sygnały uspokajające u koni - Warszawa</option>
+                            <option value="kielce">Sygnały uspokajające u koni - Kielce</option>
+                            <option value="shawna">Pozytywne metody szkolenia koni - Warszawa</option>
+                           
+                            </select>
+
+                            <select id="seminar" name="seminar" placeholder="Wybieram seminarium...">
                             <option value="Wybieram seminarium..." selected disabled>Wybieram seminarium...</option>
-      <option value="saturday">Tylko sobota:Emocje i sygnały uspokajające u koni</option>
-      <option value="sunday">Tylko niedziela: Sygnały uspokajające u koni</option>
-      <option value="two">Dwa dni: sobota + niedziela</option>
+      <option value="warszawa-sobota" data-chained="warszawa">Tylko sobota: Emocje i sygnały uspokajające u koni</option>
+      <option value="warszawa-niedziela" data-chained="warszawa">Tylko niedziela: Sygnały uspokajające u koni</option>
+      <option value="warszawa-oba" data-chained="warszawa">Dwa dni: sobota + niedziela</option>
+      <option value="kielce" data-chained="kielce">Dwa dni: Sygnały uspokajające u koni</option>
+      <option value="shawna-sobota" data-chained="shawna">Tylko sobota: Emocje u koni</option>
+      <option value="shawna-niedziela" data-chained="shawna">Tylko niedziela: Warsztaty</option>
+      <option value="shawna-opcja1" data-chained="shawna">Dwa dni: sobota + niedziela</option>
+      
     </select>
+
+
+
+
 
                             <div class="languageswitch">Tłumaczenie z języka angielskiego
                                 <label>
@@ -734,7 +741,16 @@
 </textarea>
 
 
-                            <input type="submit" value="Wyślij">
+                            <!--                            <input type="submit" value="Wyślij">-->
+                            <div class='btn-cont'>
+                                <a class='btn' href='#'>
+    Wyślij
+    <span class='line-1'></span>
+    <span class='line-2'></span>
+    <span class='line-3'></span>
+    <span class='line-4'></span>
+  </a>
+                            </div>
                         </form>
                     </div>
                 </section>
@@ -746,9 +762,19 @@
                         </div>
                         <div class="row2">
                             <div class="eva1">
-                                <p class="szweycer">Common Language, czyli Wspólny Język to owoc kontaktów z trenerami różnych zwierząt stosującymi pozytywne metody szkoleniowe. Ci najlepsi przypominają Doktora Dolittle – znajdują wspólny język ze wszelkimi istotami. Rozumieją ich potrzeby i pomagają odnaleźć się w świecie, w którym warunki dyktuje człowiek. Z tymi wspaniałymi ludźmi spotkacie się na organizowanych przeze mnie seminariach.</p><button class="read" onclick="location.href='about.html'" type="button">Czytaj więcej</button></div>
+                                <p class="szweycer">Common Language, czyli Wspólny Język to owoc kontaktów z trenerami różnych zwierząt stosującymi pozytywne metody szkoleniowe. Ci najlepsi przypominają Doktora Dolittle – znajdują wspólny język ze wszelkimi istotami. Rozumieją ich potrzeby i pomagają odnaleźć się w świecie, w którym warunki dyktuje człowiek. Z tymi wspaniałymi ludźmi spotkacie się na organizowanych przeze mnie seminariach.</p>
+                                <div class='btn-cont'>
+                                    <a class='btn' onclick="location.href='about.html'">
+    Czytaj więcej
+    <span class='line-1'></span>
+    <span class='line-2'></span>
+    <span class='line-3'></span>
+    <span class='line-4'></span>
+  </a> </div>
+                            </div>
                             <div class="eva2"></div>
                         </div>
+
                     </div>
 
 
@@ -759,9 +785,9 @@
                         <div class="row">
                             <h1>Kontakt</h1>
                             <div class="icon">
-                                <div class="icon-social"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></div>
+                                <div class="icon-social"><a href="mailto:e.rumistrzewicz@gmail.com"><i class="fa fa-envelope-o fa-5x" aria-hidden="true"></i></a></div>
                                 <div class="icon-social"><i class="fa fa-facebook fa-5x" aria-hidden="true"></i></div>
-                                <div class="icon-social"><i class="fa fa-phone-square fa-5x" aria-hidden="true"></i></div>
+                                <div class="icon-social"><a href="tel:0048537491900"><i class="fa fa-phone-square fa-5x" aria-hidden="true"></i></a></div>
                             </div>
                             <div class="website">
                                 <h4>created by www.conceptweb.com.pl</h4>
@@ -788,7 +814,8 @@
     <script src="js/toggle.js"></script>
     <script src="js/header.js"></script>
     <script src="js/svgAnim.js"></script>
-     <script src="js/videoHover.js"></script>
+    <script src="js/videoHover.js"></script>
+    <script src="js/init.js"></script>
 
 
 </body>

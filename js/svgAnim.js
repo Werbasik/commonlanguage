@@ -1,5 +1,5 @@
 $(document).ready(function(){
-console.log('animating!');
+
         new Vivus('logosvg', {
             
             duration: 200,
