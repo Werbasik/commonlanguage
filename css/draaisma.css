@@ -1,3 +1,151 @@
+/* The switch - the box around the slider */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    display: none;
+}
+
+/* The slider */
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #021430;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #256E01;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #021430;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@keyframes click-wave {
+    0% {
+        height: 40px;
+        width: 40px;
+        opacity: 0.35;
+        position: relative;
+    }
+    100% {
+        height: 200px;
+        width: 200px;
+        margin-left: -80px;
+        margin-top: -80px;
+        opacity: 0;
+    }
+}
+
+.option-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 13.33333px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    transition: all 0.15s ease-out 0s;
+    background: #cbd1d8;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 2px;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.option-input:hover {
+    background: #256E01;
+}
+
+.option-input:checked {
+    background: #256E01;
+}
+
+.option-input:checked::before {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    content: '✔';
+    display: inline-block;
+    font-size: 26.66667px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.option-input:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #256E01;
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+}
+
+.option-input.radio {
+    border-radius: 50%;
+}
+
+.option-input.radio::after {
+    border-radius: 50%;
+}
+
+
+/*END OF SWITCH & RADIO CSS*/
+
+
 body {
     border: 20px solid #256E01;
     padding: 20px;
@@ -35,8 +183,8 @@ h2 {
     text-align: center;
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #256E01;
 }
 
@@ -49,22 +197,27 @@ img {
 
 .nice {
     max-width: 700px;
-    width: 60%;
+    width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
+    float: right;
+    margin-left:15px;
+   
 }
 
 
 
 h3 {
     font-size: 20px;
+    
 }
 
 p {
     font-size: 18px;
     color: black;
+    text-align: justify;
 
 
 }
@@ -107,7 +260,7 @@ span.invoice {
     height: 100%;
 }
 
-textarea#invoiceField{
+textarea#invoiceField {
     margin-top: 10px;
 }
 
@@ -118,7 +271,6 @@ select {
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
-
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
@@ -185,6 +337,8 @@ input[type=submit]:hover {
 .slider.round:before {
     border-radius: 50%;
 }
+
+
 
 @keyframes click-wave {
     0% {
