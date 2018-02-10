@@ -93,7 +93,7 @@ input:checked + .slider:before {
     height: 40px;
     width: 40px;
     transition: all 0.15s ease-out 0s;
-    background: #cbd1d8;
+    background: white;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -150,6 +150,7 @@ input:checked + .slider:before {
 body {
     font-family: 'Roboto Condensed', sans-serif;
     overflow-y: hidden;
+    
 
 
 }
@@ -1154,6 +1155,7 @@ section#about {
 
 #container section:nth-of-type(2n) {
     background-color: white;
+    background-image: url(../img/cream_pixels.png);
 }
 
 .hamburger {
